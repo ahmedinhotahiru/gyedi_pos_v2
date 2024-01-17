@@ -1,0 +1,65 @@
+<?php
+  $page_title = 'Gyedi | My Sales';
+  include 'includes/header.php';
+  
+?>
+
+
+
+
+
+
+  <!-- Main Body Starts here -->
+  
+  <section>
+    <div class="container my-5">
+
+
+      <div class="row">
+        <!-- Main content starts here -->
+            <div class="col-md-12">
+
+                <!-- SALES REPORT for the day starts here -->
+                <div class="row">
+
+                    <!-- Sales summary -->
+                    <div class="col-md-12 mb-5">
+                        <div class="card">
+                            <div class="card-header">
+                                <p class="card-title"><span class="fa fa-shopping-cart"></span> My Sales Today</p>
+                            </div>
+
+
+                            <!-- Sales summary from database starts here -->
+                            <?php
+                                my_sales_today();
+                            ?>
+                            <!-- Sales summary from database ends here -->
+                            
+                            <div class="card-footer d-flex justify-content-between">
+                                <p>Total number of checkouts: <?php echo my_checkouts(); ?></p>
+                                <p>Total Sales: GH¢ <?php $total_sales = number_format(my_total_sales(), 2); echo $total_sales; ?></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                                       
+                </div>
+                <!-- SALES REPORT for the day ends here -->
+                
+                
+            </div>
+            <!-- Main content ends here -->
+      </div>
+
+    </div>
+    <!-- Container ends here -->
+
+  </section>
+
+  <!-- Main Body Ends here -->
+
+
+
+<?php include 'includes/footer.php'; ?>

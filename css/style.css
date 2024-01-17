@@ -1,0 +1,80 @@
+/*------------------------------------*  #GLOBAL
+\*------------------------------------*/
+.dp {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #007bff;
+  background-color: white;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.dp img {
+  width: 100%;
+}
+
+.dp2 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: white;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.dp2 img {
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#side .btn-outline-light:hover {
+  color: black;
+}
+
+.modal-header .close {
+  color: white;
+}
+
+.input-group-append .btn {
+  border-radius: 0px;
+}
+
+#error,
+#message {
+  color: red;
+  font-weight: 500;
+}
+
+#login_page .form-control:focus,
+.input-group .form-control:focus {
+  box-shadow: none;
+}
+
+#changeDp .custom-file-label::after {
+  display: none;
+}
+
+#changeDp .custom-file-input:hover {
+  cursor: pointer !important;
+}
+
+.required {
+  color: red;
+}
+
+.input-required {
+  border: 1px solid red;
+}
+
+@media print {
+  .header,
+  .footer,
+  .print,
+  .logout,
+  .back,
+  .sidebar,
+  .receiptHead {
+    display: none;
+  }
+}
